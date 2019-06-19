@@ -1,0 +1,24 @@
+<div class="nav-options">
+  <div hidden-p-lg-up class="nav-options__title">
+    <p class="nav-options__title--content">
+      <ng-content select="[mobile-title]">
+      </ng-content>
+    </p>
+  </div>
+  <div hidden-p-md-down class="nav-options__desktop-title">
+    <p class="nav-options__desktop-title--content">
+      <ng-content select="[desktop-title]">
+      </ng-content>
+    </p>
+  </div>
+  <div class="nav-options__left">
+    <ng-content select="[left]">
+    </ng-content>
+    <span hidden-p-md-down (click)="leftClicked()" class="nav-options__left__text">{{lOption}}</span>
+  </div>
+
+  <div class="nav-options__right" text-end>
+    <span hidden-p-md-down (click)="rightClicked()" class="nav-options__right__text">{{rOption}}</span>
+    <ng-content select="[right]"></ng-content>
+  </div>
+</div>

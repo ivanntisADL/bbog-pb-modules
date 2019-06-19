@@ -1,0 +1,20 @@
+{
+  "name": "examples-mod",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/animations": "^5.0.3",
+    "@angular/common": "5.0.3",
+    "@angular/compiler": "5.0.3",
+    "@angular/core": "5.0.3",
+    "@angular/forms": "5.0.3",
+    "@angular/http": "5.0.3",
+    "@angular/platform-browser": "5.0.3",
+    "@angular/platform-browser-dynamic": "5.0.3",
+    "@ionic/pro": "1.0.16",
+    "@ionic/storage": "^2.1.3",
+    "ionic-angular": "3.9.2",
+    "@pulse.io/components": "^0.14.1",
+    "ang-atom": "0.0.6"
+
+  }
+}

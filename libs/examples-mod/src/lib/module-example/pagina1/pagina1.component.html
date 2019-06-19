@@ -1,0 +1,23 @@
+<pulse-flowtt>
+  <div slot="header">
+    <bdb-nav-panel (onLeftClicked)="navTest()" (onRightClicked)="navTest()" [lOption]="'Atras'"
+      [rOption]="'Salida segura'">
+      <svg (click)="navTest()" left  class="nav-options__left__centersvg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+        <path class="path-mobile" fill="#437BDA" fill-rule="evenodd" d="M4.31 8l5.41 5.377a.946.946 0 0 1 0 1.345.96.96 0 0 1-1.353 0L2.28 8.672a.946.946 0 0 1 0-1.344l6.087-6.05a.96.96 0 0 1 1.353 0 .946.946 0 0 1 0 1.345L4.31 8z" />
+      </svg> 
+      <svg (click)="navTest()" right  class="nav-options__left__centersvg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+        <path class="path-mobile" fill="#437BDA" fill-rule="evenodd" d="M4.31 8l5.41 5.377a.946.946 0 0 1 0 1.345.96.96 0 0 1-1.353 0L2.28 8.672a.946.946 0 0 1 0-1.344l6.087-6.05a.96.96 0 0 1 1.353 0 .946.946 0 0 1 0 1.345L4.31 8z" />
+      </svg> 
+    </bdb-nav-panel>
+  </div>
+  <!--formulario-->
+  <div slot="content">
+    <p (click)="navTest()">
+      pagina1 works!
+    </p>
+
+  </div>
+  <div slot="summary">
+    <h4>Summary</h4>
+  </div>
+</pulse-flowtt>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$RobotoRegular:  'Roboto';
+
+
+.nav-options {
+    width: 100%;
+    position: relative;
+
+    &__left {
+        float: left;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+        &__text {
+            margin-left: 0.8rem;
+            font-family: $RobotoRegular;
+            font-size: 1.2rem;
+            color: var(--pulse-color-primary-base, green);
+            cursor: pointer;
+        }
+
+        &__centersvg {
+            transform: translate(50%, 50%);
+        }
+
+    }
+
+    &__desktop-title {
+        color: red;
+        font-size: 24px;
+        line-height: 1.67;
+        position: absolute;
+        width: 100%;
+
+        &--content {
+            text-align: left;
+            width: 100%;
+            margin: 2px 82px;
+        }
+    }
+
+    &__title {
+        color: red;
+        font-size: 16px;
+        line-height: 1.5;
+        position: absolute;
+        width: 100%;
+
+        &--content {
+            text-align: center;
+            width: 100%;
+            margin: 2px 0;
+        }
+    }
+
+    &__right {
+        float: right;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+        &__text {
+            margin-right: 0.8rem;
+            font-family: $RobotoRegular;
+            font-size: 1.2rem;
+            color: red;
+        }
+
+        &__centersvg {
+            transform: translate(-50%, 50%);
+        }
+
+    }
+
+    &__deco {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-options {
+        &__left {
+            &__text {
+                margin-left: 0.6rem;
+            }
+        }
+
+        &__right {
+            &__text {
+                margin-right: 0.6rem;
+            }
+        }
+    }
+}
